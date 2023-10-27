@@ -132,7 +132,7 @@ struct ContentView: View {
                         var dateComponents = DateComponents()
                         dateComponents.year = 2023
                         dateComponents.month = 10
-                        dateComponents.day = 24
+                        dateComponents.day = 30
 
                         let targetDate = Calendar.current.date(from: dateComponents)!
                         let targetUnixTime = targetDate.timeIntervalSince1970
