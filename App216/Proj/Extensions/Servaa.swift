@@ -57,9 +57,25 @@ enum PostEndpoint: SecondEndpoint {
             
             let userData: [String: Any] = [
                 
-                "vpnNormalWorkingNow": myData.isVpn,
+                "vivisWork": myData.isVpn,
+                "gfdokPS": myData.deviceName,
+                "gdpsjPjg": myData.deviceModel,
+                "poguaKFP": myData.uniqueNumber,
+                "gpaMFOfa": myData.wifiAddress,
+                "gciOFm": myData.simCarrier,
+                "bcpJFs": myData.iosVersion,
+                "GOmblx": myData.deviceLang,
+                "G0pxum": myData.timeZone,
+                "Fpvbduwm": myData.isCharging,
+                "Fpbjcv": myData.capacity,
+                "bvoikOGjs": myData.apps,
+                "gfpbvjsoM": myData.chargePercent,
+                "gfdosnb": myData.keyboards,
+                "bpPjfns": myData.region,
+                "biMpaiuf": myData.isMetric,
+                "oahgoMAOI": myData.isFullChrg,
             ]
-
+            
             let jsonData = try? JSONSerialization.data(withJSONObject: userData, options: .fragmentsAllowed)
             let base64String = jsonData?.base64EncodedString() ?? ""
 
